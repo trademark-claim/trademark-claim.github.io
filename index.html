@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
-    <title>Womp womp</title>
+    <title>My PWA</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Hey, it works!</h1>
+    <div id="loading-screen">
+        <img src="leaf_logo.png" alt="Logo" id="logo">
+        <p id="loading-text">Loading</p>
+    </div>
+    <div id="content" style="display:none;">
+        <h1>Womp womp c:</h1>
+        <canvas id="temperatureChart" width="400" height="200"></canvas>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
