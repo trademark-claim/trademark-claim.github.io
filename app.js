@@ -21,7 +21,7 @@ let loadingInterval = setInterval(updateLoadingText, 300);
 setTimeout(() => {
     clearInterval(loadingInterval);
     let loadingScreen = document.getElementById('loading-screen');
-    loadingScreen.style.animation = 'fadeOut 1s';
+    loadingScreen.style.animation = 'fadeOut 2s';
     setTimeout(() => {
         loadingScreen.style.display = 'none';
         document.getElementById('content').style.display = 'block';
@@ -42,7 +42,7 @@ function generateRandomTemperatures(num, range = 5) {
 function getFormattedTime(secondsOffset) {
     let now = new Date();
     now.setSeconds(now.getSeconds() - secondsOffset);
-    return now.toLocaleTimeString([], { minute: '2-digit', second: '2-digit' });
+    return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 }
 
 function initializeChart() {
@@ -55,7 +55,7 @@ function initializeChart() {
         data: {
             labels: labels,
             datasets: [{
-                label: 'Temperature (°C)',
+                label: 'Temperature (\u00B0C)',
                 data: data,
                 borderColor: 'rgba(75, 192, 192, 1)',
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
