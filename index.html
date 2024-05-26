@@ -7,6 +7,7 @@
     <link rel="manifest" href="manifest.json">
     <title>Leafy McLeaf-Face</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
 </head>
 <body>
     <div id="loading-screen">
@@ -15,7 +16,9 @@
     </div>
     <div id="content" style="display:none;">
         <h2>Womp Womp c:</h2>
-        <canvas id="temperatureChart" width="400" height="200"></canvas>
+        <div style="overflow-x: scroll;">
+            <canvas id="temperatureChart" width="800" height="200"></canvas>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
