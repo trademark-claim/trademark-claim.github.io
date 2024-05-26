@@ -1,6 +1,6 @@
 {
-  "name": "Leaf PWA",
-  "short_name": "LP",
+  "name": "Compest Temps",
+  "short_name": "Compost Temps",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -8,13 +8,8 @@
   "icons": [
     {
       "src": "leaf3.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "leaf2.png",
       "sizes": "512x512",
       "type": "image/png"
-    }
+    },
   ]
 }
