@@ -7,6 +7,7 @@
     <link rel="manifest" href="manifest.json">
     <title>Leafy McLeaf-Face</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@2.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
 </head>
 <body>
@@ -15,9 +16,15 @@
         <p id="loading-text">Loading</p>
     </div>
     <div id="content" style="display:none;">
-        <h2>Womp Womp owo</h2>
-        <div style="overflow-x: scroll;">
-            <canvas id="temperatureChart" width="800" height="200"></canvas>
+        <h2>Tempuru-ature</h2>
+        <div id="controls">
+            <button id="zoomInButton">Zoom In</button>
+            <button id="zoomOutButton">Zoom Out</button>
+            <button id="panLeftButton">Pan Left</button>
+            <button id="panRightButton">Pan Right</button>
+        </div>
+        <div id="chart-container">
+            <canvas id="temperatureChart"></canvas>
         </div>
     </div>
     <script src="app.js"></script>
