@@ -111,7 +111,7 @@ async function initializeChart() {
                                 hour: '2-digit',
                                 minute: '2-digit'
                             });
-                            return `Time: ${timeString}, Temp: ${context.parsed.y}°C`;
+                            return `Time: ${timeString}, Temp: ${context.parsed.y}\u00B0C`;
                         }
                     }
                 }
